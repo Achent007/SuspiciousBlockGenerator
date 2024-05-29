@@ -3,6 +3,7 @@ package be.achent.suspiciousblockgenerator;
 import be.achent.suspiciousblockgenerator.ChatColorHandler.ChatColorHandler;
 import be.achent.suspiciousblockgenerator.ChatColorHandler.parsers.custom.MiniMessageParser;
 import be.achent.suspiciousblockgenerator.ChatColorHandler.parsers.custom.PlaceholderAPIParser;
+import be.achent.suspiciousblockgenerator.Commands.SuspiciousBlockGeneratorCommands;
 import be.achent.suspiciousblockgenerator.Event.SuspiciousBlocGeneratorWorldGuardChecker;
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import org.bukkit.event.Listener;
@@ -26,7 +27,7 @@ public class SuspiciousBlockGenerator extends JavaPlugin implements Listener {
 
         getServer().getPluginManager().registerEvents(this, this);
 
-        getCommand("suspiciousblockgenerator").setExecutor(new SuspiciousBlockGenerator());
+        getCommand("suspiciousblockgenerator").setExecutor(new SuspiciousBlockGeneratorCommands());
 
         if (getServer().getPluginManager().getPlugin("WorldGuard") != null) {
             worldGuard = WorldGuardPlugin.inst();

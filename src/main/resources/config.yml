@@ -1,0 +1,10 @@
+worldguard_regions:
+  - spawn
+  - protected_area
+
+loot:
+  - item: ARCHER_POTTERY_SHERD
+    chance: 50
+  - item: PRIZE_POTTERY_SHERD
+    chance: 50
+

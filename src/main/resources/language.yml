@@ -1,0 +1,7 @@
+messages:
+  prefix: "&6[SuspiciousBlockGenerator] "
+  plugin_enabled: "&a{prefix} plugin enabled!"
+  plugin_disabled: "&c{prefix} plugin disabled!"
+  worldguard_not_found: "&c{prefix} WorldGuard plugin not found. Disabling WorldGuard integration."
+  reload_success: "&a{prefix} configuration reloaded!"
+  reload_usage: "&c{prefix} Usage: /customloot reload"

@@ -1,0 +1,24 @@
+name: SuspiciousBlockGenerator
+author: Achent
+version: '${project.version}'
+main: be.achent.suspiciousblockgenerator.SuspiciousBlockGenerator
+api-version: '1.20'
+softdepend:
+  - WorldGuard
+
+commands:
+  suspiciousblockgenerator:
+    description: Main command
+    aliases: sbg
+permissions:
+  suspiciousblockgenerator.*:
+    description: Give all permissions
+    children:
+      suspiciousblockgenerator.help: true
+      suspiciousblockgenerator.reload: true
+  suspiciousblockgenerator.help:
+    description: Permission to see the list of all commands
+    default: op
+  suspiciousblockgenerator.reload:
+    description: Permission for the reload command
+    default: op
